@@ -7,6 +7,8 @@
 
 html {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   -ms-overflow-style: scrollbar;
 }
 
@@ -16,14 +18,14 @@ html {
   box-sizing: inherit;
 }
 
-@import "functions";
-@import "variables";
+@import 'functions';
+@import 'variables';
 
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
+@import 'mixins/breakpoints';
+@import 'mixins/grid-framework';
+@import 'mixins/grid';
 
-@import "grid";
-@import "utilities/display";
-@import "utilities/flex";
-@import "utilities/spacing";
+@import 'grid';
+@import 'utilities/display';
+@import 'utilities/flex';
+@import 'utilities/spacing';

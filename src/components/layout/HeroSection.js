@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { Container } from 'react-bootstrap';
-const LandingContent = () => {
+import { Jumbotron, Container } from 'react-bootstrap';
+const HeroSection = () => {
   return (
     <Fragment>
-      <Container fluid auto>
+      <Container fluid className="m-0 p-5">
         <h2 className="display-6 my-4 catchy-phrase"></h2>
         <div className="row align-items-center justify-content-center py-4 px-2">
           <div className="col-lg-6 p-4">
@@ -55,4 +55,4 @@ const LandingContent = () => {
   );
 };
 
-export default LandingContent;
+export default HeroSection;

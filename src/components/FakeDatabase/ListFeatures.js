@@ -1,4 +1,4 @@
-export const listNavDropDown = [
+export const ListFeatures = [
   {
     key: 1,
     name: 'Perfected Throw',
@@ -69,5 +69,5 @@ export const listNavDropDown = [
 ];
 
 export default {
-  listNavDropDown,
+  ListFeatures,
 };

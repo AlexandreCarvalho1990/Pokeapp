@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import Features from '../layout/Features';
-import LandingContent from '../layout/LandingContent';
+import HeroSection from '../layout/HeroSection';
+import FeaturesListSection from './FeaturesListSection';
 const Landing = () => {
   return (
     <Fragment>
-      <LandingContent />
-      <Features />
+      <HeroSection />
+      <FeaturesListSection />
     </Fragment>
   );
 };
