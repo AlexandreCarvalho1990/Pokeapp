@@ -2,7 +2,7 @@ import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ModalItem from './ModalItem';
-import logo from '../../img/logo.svg';
+import logo from '../../img/logo.png';
 import { listNavDropDown } from '../FakeDatabase/listNavDropDown';
 const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -20,7 +20,12 @@ const NavBar = () => {
         handleClose={handleClose}
         item={listNavDropDown[itemClicked]}
       />
-      <Navbar collapseOnSelect bg="info" expand="lg" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        fixed="top"
+        className="shadow-sm bg-primary"
+      >
         <Navbar.Brand as={Link} to="/">
           <img
             src={logo}
@@ -33,7 +38,10 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="Feature List" id="collasible-nav-dropdown">
+            <NavDropdown
+              title={<span className="text-dark my-auto">Features List</span>}
+              id="collasible-nav-dropdown"
+            >
               {listNavDropDown.map((listItem, index) => (
                 <Fragment>
                   <NavDropdown.Item onClick={() => handleClick(index)}>
@@ -44,11 +52,11 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav className="text">
-            <Nav.Link as={Link} to="/login">
-              Login
+            <Nav.Link eventKey={2} as={Link} to="/join" className="text-dark">
+              Join
             </Nav.Link>
-            <Nav.Link eventKey={2} as={Link} to="/register">
-              Register
+            <Nav.Link as={Link} to="/login" className="text-dark">
+              Log In
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
