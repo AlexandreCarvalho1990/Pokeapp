@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 
 const FeaturesListSection = () => {
   return (
     <Fragment>
-      <Jumbotron className="m-0">
+      <Container fluid className="m-0 p-5">
         <h1>Hello, world!</h1>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for
@@ -13,7 +13,7 @@ const FeaturesListSection = () => {
         <p>
           <Button variant="primary">Learn more</Button>
         </p>
-      </Jumbotron>
+      </Container>
     </Fragment>
   );
 };

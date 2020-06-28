@@ -1,8 +1,17 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import ModalItem from './ModalItem';
-import logo from '../../img/logo.png';
+import logo from '../../img/biglogo.png';
+/* NavBar state for model functionality
+
+  const [show, setShow] = useState(false);
+  const [itemClicked, setItemClicked] = useState(0);
+  const handleClose = () => setShow(false);
+  const handleClick = (key) => {
+    setItemClicked(key);
+    setShow(true);
+  };
+*/
 /* navbar droplist menu 
       <ModalItem
         key={itemClicked + 1}
@@ -23,16 +32,26 @@ import logo from '../../img/logo.png';
               ))}
             </NavDropdown>
 */
+
+/* Login and Join System
+
+            <Nav.Link
+              eventKey={2}
+              as={Link}
+              to="/join"
+              className="font-weight-bold text-dark"
+            >
+              Join
+            </Nav.Link>
+            <Nav.Link as={Link} to="/login" className="text-dark">
+              Log In
+            </Nav.Link>
+
+*/
+
 const NavBar = () => {
-  const [show, setShow] = useState(false);
-  const [itemClicked, setItemClicked] = useState(0);
-  const handleClose = () => setShow(false);
-  const handleClick = (key) => {
-    setItemClicked(key);
-    setShow(true);
-  };
   return (
-    <>
+    <Fragment>
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -54,20 +73,15 @@ const NavBar = () => {
           <Nav className="mr-auto"></Nav>
           <Nav className="text">
             <Nav.Link
-              eventKey={2}
-              as={Link}
-              to="/join"
-              className="font-weight-bold text-dark"
+              href="https://discord.com/invite/hW4djSw"
+              className="text-dark "
             >
-              Join
-            </Nav.Link>
-            <Nav.Link as={Link} to="/login" className="text-dark">
-              Log In
+              Discord
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </Fragment>
   );
 };
 
