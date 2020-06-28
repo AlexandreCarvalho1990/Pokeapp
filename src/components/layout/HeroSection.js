@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="row align-items-center justify-content-center py-4 px-2">
           <div className="col-lg-6 p-4">
             {' '}
-            <h1 className="display-4">
+            <h1 className="features-text display-4">
               <strong>Pokemod </strong>
               is all about <ins>efficiency.</ins>
             </h1>

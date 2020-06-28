@@ -58,9 +58,6 @@ const NavBar = () => {
         background-color: #ffffff;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
     }
-    .navbar-pokemod:hover {
-      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-  }
     `}
       </style>
       <Navbar
@@ -83,6 +80,12 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav className="text">
+            <Nav.Link
+              href="https://discord.com/invite/hW4djSw"
+              className="text-dark "
+            >
+              Become a Member
+            </Nav.Link>
             <Nav.Link
               href="https://discord.com/invite/hW4djSw"
               className="text-dark "
