@@ -52,11 +52,22 @@ import logo from '../../img/biglogo.png';
 const NavBar = () => {
   return (
     <Fragment>
+      <style type="text/css">
+        {`
+    .navbar-pokemod {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 1px 0px  rgba(0,0,0,0.37);
+    }
+    .navbar-pokemod:hover {
+      box-shadow: 0px 0px 1px 0px ;
+  }
+    `}
+      </style>
       <Navbar
         collapseOnSelect
         expand="lg"
         fixed="top"
-        className="shadow-sm bg-primary"
+        className="navbar-pokemod"
       >
         <Navbar.Brand as={Link} to="/">
           <img

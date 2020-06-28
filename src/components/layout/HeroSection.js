@@ -8,7 +8,7 @@ const HeroSection = () => {
       <style type="text/css">
         {`
     .container {
-      padding-top: 150px;
+      padding-top: 100px;
 
     }
     .h1 strong{

@@ -6,10 +6,19 @@ import Features from '../layout/Features';
 const Footer = () => {
   return (
     <Fragment>
-      <Card.Footer className="m-0 p-0">
+      <style type="text/css">
+        {`
+    .card-footer {
+        background-color: black;
+        margin:0;
+        padding:0;
+    }
+    `}
+      </style>
+      <Card.Footer>
         <Features />
         <div className="m-0 p-0">
-          <div className="copyright text-center bg-dark">
+          <div className="copyright text-center">
             <div className="container mb-0 pt-3 pb-2">
               <p className="text-light">
                 © 2020, made with

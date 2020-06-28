@@ -1,15 +1,22 @@
 import React, { Fragment } from 'react';
-import Device from 'react-device-frame';
-import { Container } from 'react-bootstrap';
+import Demo1 from '../../videos/fastcatch_perfectthrow.webm';
+import PhoneScreen from './PhoneScreen';
+import './devices.css';
 const Phone = () => {
   return (
     <Fragment>
-      <Device
-        name="galaxy-s5"
-        color="black"
-        url="https://www.google.com"
-        size="small"
-      />
+      <div className="device device-google-pixel device-black">
+        <div className="device-frame">
+          <div className="device-content">
+            <PhoneScreen />
+          </div>
+        </div>
+        <div className="device-stripe"></div>
+        <div className="device-header"></div>
+        <div className="device-sensors"></div>
+        <div className="device-btns"></div>
+        <div className="device-power"></div>
+      </div>
     </Fragment>
   );
 };
