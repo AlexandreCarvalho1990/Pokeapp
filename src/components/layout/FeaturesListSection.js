@@ -1,33 +1,68 @@
 import React, { Fragment } from 'react';
-import { Tab, Col, Row, Nav } from 'react-bootstrap';
+import { Media, Jumbotron } from 'react-bootstrap';
+import logoStar from '../../img/pokestart.svg';
 import FeatureText from './FeatureText';
+import { ListFeatures } from '../FakeDatabase/ListFeatures';
+
+/* basic struture to build the list of features
+
+          <Media as="li">
+            <GiStarsStack className="listFeaturesStyle text-warning" />
+            <Media.Body>
+              <h5>List-based media object</h5>
+              <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                scelerisque ante sollicitudin commodo. Cras purus odio,
+                vestibulum in vulputate at, tempus viverra turpis. Fusce
+                condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                congue felis in faucibus.
+              </p>
+            </Media.Body>
+          </Media>
+
+*/
 const FeaturesListSection = () => {
   return (
     <Fragment>
-      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-        <Row>
-          <Col sm={3}>
-            <Nav variant="pills" className="flex-column">
-              <Nav.Item>
-                <Nav.Link eventKey="first">Tab 1</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link eventKey="second">Tab 2</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Col>
-          <Col sm={9}>
-            <Tab.Content>
-              <Tab.Pane eventKey="first">
-                <FeatureText />
-              </Tab.Pane>
-              <Tab.Pane eventKey="second">
-                <FeatureText />
-              </Tab.Pane>
-            </Tab.Content>
-          </Col>
-        </Row>
-      </Tab.Container>
+      <style type="text/css">
+        {`
+    .jumbotron-fluid{
+      background-color: #f5f5f5!important;
+    }
+    .listFeaturesStyle {
+      color: #ffc107 !important;
+      font-size: xxx-large !important;}
+    
+    .features-text {
+      color: #292929 !important;
+    }
+
+    `}
+      </style>
+      <Jumbotron fluid className="m-0">
+        <div className="d-flex justify-content-center m-0">
+          <ul className="list-unstyled">
+            <h1 className="features-text text-center p-5">Features</h1>{' '}
+            {ListFeatures.map((item, index) => (
+              <Fragment>
+                <Media>
+                  <img
+                    width={64}
+                    height={64}
+                    className="mr-3"
+                    src={logoStar}
+                    alt="pokefeature"
+                  />
+                  <Media.Body>
+                    <h5> {item.name}</h5>
+                    <p>{item.text}</p>
+                  </Media.Body>
+                </Media>
+              </Fragment>
+            ))}
+          </ul>
+        </div>
+      </Jumbotron>
     </Fragment>
   );
 };

@@ -16,7 +16,7 @@ const HeroSection = () => {
     }
     `}
       </style>
-      <div className="container px-4">
+      <div className="shadow-md container px-4">
         <div className="row align-items-center justify-content-center py-4 px-2">
           <div className="col-lg-6 p-4">
             {' '}

@@ -56,10 +56,10 @@ const NavBar = () => {
         {`
     .navbar-pokemod {
         background-color: #ffffff;
-        box-shadow: 0px 0px 1px 0px  rgba(0,0,0,0.37);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
     }
     .navbar-pokemod:hover {
-      box-shadow: 0px 0px 1px 0px ;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
     `}
       </style>
