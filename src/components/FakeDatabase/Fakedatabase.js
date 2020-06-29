@@ -1,6 +1,5 @@
 import pikachu from '../../img/pokemon/pikachu-2.svg';
 import eevee from '../../img/pokemon/eevee.svg';
-import '.phonescreen.css';
 export const ListFeatures = [
   {
     key: 1,
