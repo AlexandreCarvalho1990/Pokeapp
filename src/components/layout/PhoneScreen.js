@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import FastcatchPerfectthrow from '../../videos/fastcatch_perfectthrow.webm';
-import FeatList from '../../videos/feat_list.webm';
+import FastcatchPerfectthrow from '../../videos/fastcatch_perfectthrow.mp4';
+import FeatList from '../../videos/feat_list.mp4';
 import Noballdrop from '../../videos/noballdrop.mp4';
-import QuickPowerup from '../../videos/quick_powerup.webm';
-import TransferEverything from '../../videos/transfer_everything.webm';
-import ReactPlayer from 'react-player';
+import QuickPowerup from '../../videos/quick_powerup.mp4';
+import TransferEverything from '../../videos/transfer_everything.mp4';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import './PhoneScreen.css';
 /* 
           <Slide index={0}>
             <ReactPlayer
@@ -47,22 +47,22 @@ const PhoneScreen = () => {
   return (
     <Fragment>
       <CarouselProvider
-        naturalSlideWidth={250}
-        naturalSlideHeight={500}
+        naturalSlideWidth={320}
+        naturalSlideHeight={572}
         totalSlides={videoList.length}
         infinite={true}
       >
         <Slider>
           {videoList.map((video, index) => (
             <Slide index={index}>
-              <ReactPlayer
-                url={video}
-                height="100%"
-                width="100%"
-                muted
-                playing={true}
-                loop={true}
-              />
+              <video
+                className="video"
+                src={video}
+                preload="auto"
+                autoplay="true"
+                muted="true"
+                loop="true"
+              ></video>
             </Slide>
           ))}
         </Slider>
