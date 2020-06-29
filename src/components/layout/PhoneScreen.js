@@ -61,7 +61,7 @@ const PhoneScreen = () => {
                 width="100%"
                 muted
                 playing={true}
-                loop="true"
+                loop={true}
               />
             </Slide>
           ))}

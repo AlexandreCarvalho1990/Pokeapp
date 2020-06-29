@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../img/biglogo.png';
 /* NavBar state for model functionality
 
@@ -50,6 +51,9 @@ import logo from '../../img/biglogo.png';
 */
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Fragment>
       <style type="text/css">
@@ -74,18 +78,15 @@ const NavBar = () => {
             className="d-inline-block"
             alt="Pokemod"
           />{' '}
-          {<span className="font-weight-bold my-auto">Pokemod</span>}
+          {<span className="my-auto">Pokemod</span>}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav className="text">
-            <Nav.Link
-              href="https://discord.com/invite/hW4djSw"
-              className="text-dark "
-            >
-              Become a Member
-            </Nav.Link>
+            <AnchorLink href="#memberSection">
+              <Nav.Link className="text-dark font-weight-bold">Join</Nav.Link>
+            </AnchorLink>
             <Nav.Link
               href="https://discord.com/invite/hW4djSw"
               className="text-dark "

@@ -28,7 +28,11 @@ const ActionSection = () => {
           </AwesomeButton>{' '}
         </div>
         <div className="col py-2">
-          <AwesomeButton type="primary" size="medium">
+          <AwesomeButton
+            type="primary"
+            size="medium"
+            className="text-decoration-none"
+          >
             <FaDiscord /> Join Us
           </AwesomeButton>{' '}
         </div>

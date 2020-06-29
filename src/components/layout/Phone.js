@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Demo1 from '../../videos/fastcatch_perfectthrow.webm';
 import PhoneScreen from './PhoneScreen';
 import './devices.css';
 const Phone = () => {

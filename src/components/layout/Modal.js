@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-const ModalItem = ({ show, handleClose, item }) => {
-  return (
+
+/* Old modal version 
     <Fragment>
       {item.key ? (
         <Fragment>
@@ -68,7 +68,28 @@ const ModalItem = ({ show, handleClose, item }) => {
         </Fragment>
       )}
     </Fragment>
+*/
+
+const Modal = ({ show, handleClose, item }) => {
+  return (
+    <Fragment>
+      {' '}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
+        <Modal.Body></Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Fragment>
   );
 };
 
-export default ModalItem;
+export default Modal;

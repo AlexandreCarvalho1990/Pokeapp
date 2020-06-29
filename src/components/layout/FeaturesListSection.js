@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import { Media, Jumbotron } from 'react-bootstrap';
 import logoStar from '../../img/pokestart.svg';
-import FeatureText from './FeatureText';
-import { ListFeatures } from '../FakeDatabase/ListFeatures';
+import { ListFeatures } from '../FakeDatabase/Fakedatabase';
 
 /* basic struture to build the list of features
 

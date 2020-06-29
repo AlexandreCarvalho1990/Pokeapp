@@ -1,3 +1,6 @@
+import pikachu from '../../img/pokemon/pikachu-2.svg';
+import eevee from '../../img/pokemon/eevee.svg';
+
 export const ListFeatures = [
   {
     key: 1,
@@ -67,7 +70,46 @@ export const ListFeatures = [
     donor: true,
   },
 ];
-
-export default {
-  ListFeatures,
-};
+export const ModalBody = [
+  {
+    type: 'download',
+    title: 'Show your support!',
+    text: `Guarantees excellent throws, Pokémon doesn't attack, move or fly. Also if you're bad enough, any missed ball returns to your hand.`,
+    donor: false,
+  },
+];
+export const MemberCard = [
+  {
+    title: 'Coffee Addict',
+    icon: eevee,
+    about: `Show your support and help keeping Pokémod growing and alive!
+    You'll get a well deserved role on Discord, access to a channel exclusive for supporters and will be able to use any emojies that your heart desires.`,
+    benefits: {
+      title: 'You will get:',
+      items: [
+        'A special role in our Discord Server',
+        'Ability to use external emojies',
+        'Access a restrict chatroom where you can discuss the future development of Pokémod',
+      ],
+    },
+    price: 2,
+    link: 'https://www.patreon.com/join/pokemod/checkout?rid=5061017',
+  },
+  {
+    title: 'Explorer',
+    icon: pikachu,
+    about: `Do you want to show your support and help improving and testing Pokémod as well?
+    You'll have access to pre-releases versions of Pokémod Espresso, allowing you to experiment with and give feedback on new modules being tested!`,
+    benefits: {
+      title: 'You will get:',
+      items: [
+        'The exclusive Beta Tester role',
+        'Access to the latest bleeding-edge/beta APKs being cooked at the moment',
+        'Lets you participate in the Testers private chatroom',
+      ],
+    },
+    price: 7,
+    link: 'https://www.patreon.com/join/pokemod/checkout?rid=5061018',
+  },
+];
+export default { ModalBody, ListFeatures, MemberCard };
