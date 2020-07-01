@@ -1,20 +1,8 @@
 import React, { Fragment } from 'react';
-import {
-  Jumbotron,
-  Card,
-  Container,
-  CardGroup,
-  CardDeck,
-  Row,
-  Col,
-  Button,
-} from 'react-bootstrap';
+import { Card, Container, Row } from 'react-bootstrap';
 import { MemberCard } from '../FakeDatabase/Fakedatabase';
 import { AwesomeButton } from 'react-awesome-button';
 import styles from 'react-awesome-button/src/styles/themes/theme-c137';
-import pokebag from '../../img/pokemon/pokebag.svg';
-import star from '../../img/pokemon/star-1.svg';
-import pokecoin from '../../img/pokemon/pokecoin.svg';
 
 const MemberSection = () => {
   return (
@@ -83,14 +71,14 @@ const MemberSection = () => {
                 <hr />
                 <h1 className="member-price text-center">{info.price}$</h1>
                 <p className="member-month">PER MONTH</p>
-                <Card.Text>
+                <div>
                   {info.benefits.items.map((itemText, index) => (
                     <Fragment key={index}>
                       <hr />
                       <p className="lead">{itemText}</p>
                     </Fragment>
                   ))}
-                </Card.Text>{' '}
+                </div>{' '}
                 <AwesomeButton
                   type={info.price > 2 ? 'link' : 'primary'}
                   size="medium"

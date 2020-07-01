@@ -25,7 +25,7 @@ const DonorSection = () => {
         <Row className="justify-content-center text-center">
           <Card style={{ width: '25rem' }} className=" m-4 shadow">
             <Card.Body className="justify-content-center justify-content-center">
-              <Card.Text>
+              <div>
                 <h2 className="text-center">With Bitcoin</h2>
                 <hr />
                 <img
@@ -40,7 +40,7 @@ const DonorSection = () => {
                 <p className="font-weight-bold">
                   1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ
                 </p>
-              </Card.Text>{' '}
+              </div>{' '}
             </Card.Body>
           </Card>
         </Row>

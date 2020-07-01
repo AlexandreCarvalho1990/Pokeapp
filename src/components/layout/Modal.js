@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { Modal, Col, Row, Container, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import DownloadButton from './DownloadButton';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { FaDownload, FaHeart } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 /* Old modal version 
     <Fragment>
       {item.key ? (

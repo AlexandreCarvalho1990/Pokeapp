@@ -1,19 +1,22 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { AwesomeButton } from 'react-awesome-button';
 import pokemonApp from '../../releases/PokeApp.apk';
+
+function simulateNetworkRequest() {
+  return new Promise((resolve) => setTimeout(resolve, 1000));
+}
+
 const DownloadButton = () => {
   const [isLoading, setLoading] = useState(true);
   const [counter, setCounter] = useState(7);
-  function simulateNetworkRequest() {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
-  }
 
   useEffect(() => {
     if (counter > 0) {
       simulateNetworkRequest().then(() => {
         setCounter(counter - 1);
       });
-    } else {
+    }
+    if (counter < 1) {
       setLoading(false);
     }
   }, [counter]);
