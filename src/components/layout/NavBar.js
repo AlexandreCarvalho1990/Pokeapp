@@ -2,36 +2,10 @@ import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import logo from '../../img/biglogo.png';
+import logo from '../../img/logo.png';
+
 /* NavBar state for model functionality
 
-  const [show, setShow] = useState(false);
-  const [itemClicked, setItemClicked] = useState(0);
-  const handleClose = () => setShow(false);
-  const handleClick = (key) => {
-    setItemClicked(key);
-    setShow(true);
-  };
-*/
-/* navbar droplist menu 
-      <ModalItem
-        key={itemClicked + 1}
-        show={show}
-        handleClose={handleClose}
-        item={listNavDropDown[itemClicked]}
-      />
-            <NavDropdown
-              title={<span className="text-dark my-auto">Features List</span>}
-              id="collasible-nav-dropdown"
-            >
-              {listNavDropDown.map((listItem, index) => (
-                <Fragment>
-                  <NavDropdown.Item onClick={() => handleClick(index)}>
-                    {listItem.name}
-                  </NavDropdown.Item>
-                </Fragment>
-              ))}
-            </NavDropdown>
 */
 
 /* Login and Join System
@@ -51,9 +25,6 @@ import logo from '../../img/biglogo.png';
 */
 
 const NavBar = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
     <Fragment>
       <style type="text/css">

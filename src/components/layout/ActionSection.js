@@ -23,7 +23,6 @@ const ActionSection = () => {
     setNumberSection(Number(teste));
     setShow(true);
   };
-  console.log(ModalHeroSection);
   return (
     <Fragment>
       <ModalElement
@@ -32,7 +31,7 @@ const ActionSection = () => {
         item={ModalHeroSection[numberSection]}
       />
       <div className="row align-items-center justify-content-center text-center">
-        <div className="col py-2">
+        <div className="col-auto py-1">
           <AwesomeButton
             onPress={() => handleClick(0)}
             type="primary"
@@ -41,14 +40,14 @@ const ActionSection = () => {
             <FaDownload /> Install Now
           </AwesomeButton>{' '}
         </div>
-        <div className="col py-2">
+        <div className="col-auto py-1">
           <AnchorLink href="#memberSection">
             <AwesomeButton type="link" size="medium">
               <FaHeart /> Support Us
             </AwesomeButton>{' '}
           </AnchorLink>
         </div>
-        <div className="col py-2">
+        <div className="col-auto py-1">
           <AwesomeButton
             href="https://discord.com/invite/hW4djSw"
             className="text-decoration-none"
