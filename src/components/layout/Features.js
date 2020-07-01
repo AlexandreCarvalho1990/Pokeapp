@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import googleLogo from '../../img/googleplay.svg';
+import { Container } from 'react-bootstrap';
 const Features = () => {
   return (
     <Fragment>
@@ -12,7 +13,7 @@ const Features = () => {
     }
     `}
       </style>
-      <div className="features py-4 px-4">
+      <div className="features d-flex justify-content-center py-4 px-4">
         <div className="container py-2 px-2">
           <div className="row">
             <div className="col-12 col-md-4">

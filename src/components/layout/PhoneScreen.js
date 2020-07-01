@@ -37,6 +37,7 @@ import './PhoneScreen.css';
           </Slide>
 */
 const PhoneScreen = () => {
+  console.log(CarouselProvider);
   const videoList = [
     FastcatchPerfectthrow,
     FeatList,
@@ -51,6 +52,7 @@ const PhoneScreen = () => {
         naturalSlideHeight={572}
         totalSlides={videoList.length}
         infinite={true}
+        disableAnimation={true}
       >
         <Slider>
           {videoList.map((video, index) => (

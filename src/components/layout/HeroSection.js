@@ -39,12 +39,12 @@ const HeroSection = () => {
     <Fragment>
       <style type="text/css">
         {`
-        .container {
-          padding-top: 100px;
+        .container-hero {
+          padding-top: 100px !important;
         }
         `}
       </style>
-      <div className="shadow-md container px-4">
+      <div className="shadow-md container-hero d-flex justify-content-center px-4">
         <div className="row align-items-center justify-content-center py-4 px-2">
           <div className="col-lg-6 p-4">
             <h1 className="features-text display-4">

@@ -7,6 +7,10 @@ const NotFound = () => {
     <Fragment>
       <style type="text/css">
         {`
+        .body {
+          margin:0 !important;
+          padding: 0 !important!;
+        }
         .container-404{
           background-color: #f5f5f5!important;
           margin: 0px;
