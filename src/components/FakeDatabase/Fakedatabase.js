@@ -69,12 +69,30 @@ export const ListFeatures = [
     donor: true,
   },
 ];
-export const ModalBody = [
+export const ModalHeroSection = [
   {
     type: 'download',
     title: 'Show your support!',
-    text: `Guarantees excellent throws, Pokémon doesn't attack, move or fly. Also if you're bad enough, any missed ball returns to your hand.`,
-    donor: false,
+    text: `If you like Pokemod and want us to continue moving forwards, developing more features, faster updates and keeping the project alive, perhaps you might consider buying us a cup of coffee! ☕.`,
+    secondtext:
+      'Besides our appreciation, you will also get access to the beta APK with exclusive modules not yet released.',
+    link: '#Member',
+    linktext: 'patreon.com/pokemod',
+    secondlink:
+      'bitcoin:1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ?message=Support%20Pok%C3%A9mod',
+    secondlinktext: '1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ',
+  },
+  {
+    type: 'support',
+    title: 'Show your support!',
+    text: `If you like Pokemod and want us to continue moving forwards, developing more features, faster updates and keeping the project alive, perhaps you might consider buying us a cup of coffee! ☕.`,
+    secondtext:
+      'Besides our appreciation, you will also get access to the beta APK with exclusive modules not yet released.',
+    link: '#Member',
+    linktext: 'patreon.com/pokemod',
+    secondlink:
+      'bitcoin:1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ?message=Support%20Pok%C3%A9mod',
+    secondlinktext: '1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ',
   },
 ];
 export const MemberCard = [
@@ -111,4 +129,4 @@ export const MemberCard = [
     link: 'https://www.patreon.com/join/pokemod/checkout?rid=5061018',
   },
 ];
-export default { ModalBody, ListFeatures, MemberCard };
+export default { ModalHeroSection, ListFeatures, MemberCard };

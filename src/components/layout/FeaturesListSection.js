@@ -43,21 +43,19 @@ const FeaturesListSection = () => {
           <ul className="list-unstyled">
             <h1 className="features-text text-center p-5">Features</h1>{' '}
             {ListFeatures.map((item, index) => (
-              <Fragment>
-                <Media>
-                  <img
-                    width={64}
-                    height={64}
-                    className="mr-3"
-                    src={logoStar}
-                    alt="pokefeature"
-                  />
-                  <Media.Body>
-                    <h5> {item.name}</h5>
-                    <p>{item.text}</p>
-                  </Media.Body>
-                </Media>
-              </Fragment>
+              <Media key={index}>
+                <img
+                  width={64}
+                  height={64}
+                  className="mr-3"
+                  src={logoStar}
+                  alt="pokefeature"
+                />
+                <Media.Body>
+                  <h5> {item.name}</h5>
+                  <p>{item.text}</p>
+                </Media.Body>
+              </Media>
             ))}
           </ul>
         </div>

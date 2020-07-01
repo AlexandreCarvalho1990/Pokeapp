@@ -1,7 +1,10 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { FaDownload, FaDiscord, FaHeart } from 'react-icons/fa';
 import { AwesomeButton } from 'react-awesome-button';
 import styles from 'react-awesome-button/src/styles/themes/theme-c137';
+import { ModalHeroSection } from '../FakeDatabase/Fakedatabase';
+import ModalElement from './Modal';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 /* Create unique styles inside Fragment component 
       <style type="text/css">
         {`
@@ -13,22 +16,42 @@ import styles from 'react-awesome-button/src/styles/themes/theme-c137';
       </style>
 */
 const ActionSection = () => {
-  console.log(styles);
+  const [show, setShow] = useState(false);
+  const [numberSection, setNumberSection] = useState(0);
+  const handleClose = () => setShow(false);
+  const handleClick = (teste) => {
+    setNumberSection(Number(teste));
+    setShow(true);
+  };
+  console.log(ModalHeroSection);
   return (
     <Fragment>
+      <ModalElement
+        show={show}
+        handleClose={handleClose}
+        item={ModalHeroSection[numberSection]}
+      />
       <div className="row align-items-center justify-content-center text-center">
         <div className="col py-2">
-          <AwesomeButton type="primary" size="medium">
+          <AwesomeButton
+            onPress={() => handleClick(0)}
+            type="primary"
+            size="medium"
+          >
             <FaDownload /> Install Now
           </AwesomeButton>{' '}
         </div>
         <div className="col py-2">
-          <AwesomeButton type="link" size="medium">
-            <FaHeart /> Support Us
-          </AwesomeButton>{' '}
+          <AnchorLink href="#memberSection">
+            <AwesomeButton type="link" size="medium">
+              <FaHeart /> Support Us
+            </AwesomeButton>{' '}
+          </AnchorLink>
         </div>
         <div className="col py-2">
           <AwesomeButton
+            href="https://discord.com/invite/hW4djSw"
+            className="text-decoration-none"
             type="primary"
             size="medium"
             className="text-decoration-none"

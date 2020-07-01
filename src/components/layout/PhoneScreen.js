@@ -54,14 +54,14 @@ const PhoneScreen = () => {
       >
         <Slider>
           {videoList.map((video, index) => (
-            <Slide index={index}>
+            <Slide key={index} index={index}>
               <video
                 className="video"
                 src={video}
                 preload="auto"
-                autoplay="true"
-                muted="true"
-                loop="true"
+                autoPlay={true}
+                muted={true}
+                loop={true}
               ></video>
             </Slide>
           ))}
