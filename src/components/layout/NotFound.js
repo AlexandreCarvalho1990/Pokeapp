@@ -8,13 +8,14 @@ const NotFound = () => {
       <style type="text/css">
         {`
         .container-404{
+          background-color: #f5f5f5!important;
           margin: 0px;
           display: flex;
           justify-content: center;
           align-items: center;
           height: 80vh;
           padding-top: 150px;
-          padding-bottom: 150px;
+          padding-bottom: 50px;
         };
         .text-container-404 {
           display: flex;
