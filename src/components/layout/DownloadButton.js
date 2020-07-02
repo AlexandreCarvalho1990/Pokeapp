@@ -12,15 +12,12 @@ const DownloadButton = () => {
         setCounter(counter - 1);
       }, 1000);
     }
-    const ac = new AbortController();
     if (counter > 0) {
       simulateNetworkRequest();
-    }
-
-    if (counter < 1) {
+    } else {
       setLoading(false);
+      setCounter(7);
     }
-    return () => ac.abort();
   }, [counter]);
   return (
     <Fragment>

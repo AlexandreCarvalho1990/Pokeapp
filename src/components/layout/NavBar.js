@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../img/logo.png';
-import logo2 from '../../img/pokemodred.png';
 /* NavBar state for model functionality
 {<span className="my-auto">Pokemod</span>}
 */

@@ -76,6 +76,7 @@ const MemberSection = () => {
                 ))}
                 <div className="p-3">
                   <AwesomeButton
+                    style={styles}
                     type={info.price > 2 ? 'link' : 'primary'}
                     size="medium"
                     ripple
