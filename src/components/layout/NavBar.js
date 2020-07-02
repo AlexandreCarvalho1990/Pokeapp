@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../img/logo.png';
-
+import logo2 from '../../img/pokemodred.png';
 /* NavBar state for model functionality
-
+{<span className="my-auto">Pokemod</span>}
 */
 
 /* Login and Join System
@@ -49,18 +49,24 @@ const NavBar = () => {
             className="d-inline-block"
             alt="Pokemod"
           />{' '}
-          {<span className="my-auto">Pokemod</span>}
+          <img
+            src={logo2}
+            width="100"
+            height="auto"
+            className="d-inline-block"
+            alt="Pokemod"
+          />{' '}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav className="text">
             <AnchorLink href="#memberSection">
-              <p className="nav-link text-dark font-weight-bold">Join</p>
+              <p className="nav-link text-dark font-weight-bold m-0">Join</p>
             </AnchorLink>
             <Nav.Link
               href="https://discord.com/invite/hW4djSw"
-              className="text-dark "
+              className="text-dark m-0"
             >
               Discord
             </Nav.Link>
