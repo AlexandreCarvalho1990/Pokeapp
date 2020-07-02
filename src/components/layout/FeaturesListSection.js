@@ -41,7 +41,7 @@ const FeaturesListSection = () => {
       <Jumbotron fluid className="m-0">
         <div className="d-flex justify-content-center m-0">
           <ul className="list-unstyled">
-            <h1 className="features-text text-center p-5">Features</h1>{' '}
+            <h1 className="features-text text-center p-4">Features</h1>{' '}
             {ListFeatures.map((item, index) => (
               <Media key={index}>
                 <img

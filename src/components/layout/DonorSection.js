@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Container, Row, Card, Jumbotron } from 'react-bootstrap';
+import { Row, Card, Jumbotron } from 'react-bootstrap';
 import Pokecoin from '../../img/pokemon/pokecoin.svg';
 import BitcoinCode from '../../img/bitcoin_qrcode_big.png';
 /* Teste testimonials 
@@ -22,9 +22,9 @@ const DonorSection = () => {
           />{' '}
           Support Us
         </h1>
-        <Row className="justify-content-center text-center">
+        <Row noGutters={true} className="justify-content-center text-center">
           <Card style={{ width: '25rem' }} className=" m-4 shadow">
-            <Card.Body className="justify-content-center justify-content-center">
+            <Card.Body>
               <div>
                 <h2 className="text-center">With Bitcoin</h2>
                 <hr />
@@ -33,7 +33,6 @@ const DonorSection = () => {
                   href="bitcoin:1PokemodTZFAFBhSPxRWf1JiumYJ2mvDdJ?message=Support%20Pok%C3%A9mod"
                   width="100%"
                   height="100%"
-                  className="d-inline-block"
                   alt="icon"
                 />{' '}
                 <hr />

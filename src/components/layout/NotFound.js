@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Jumbotron } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import Notfound from '../../img/NotFound.png';
 const NotFound = () => {
   return (
     <Fragment>
       <style type="text/css">
         {`
-        .body {
-          margin:0 !important;
-          padding: 0 !important!;
-        }
         .container-404{
           background-color: #f5f5f5!important;
           margin: 0px;
@@ -33,7 +29,7 @@ const NotFound = () => {
         `}
       </style>
       <Jumbotron fluid className="container-404">
-        <img src={Notfound} height="100%" width="auto" />
+        <img src={Notfound} height="100%" width="auto" alt="Error 404" />
         <div className="text-container-404">
           <h5 className="heading-404">
             Sorry we couldn't find the page you're looking for.

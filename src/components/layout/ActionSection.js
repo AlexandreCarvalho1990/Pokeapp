@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { FaDownload, FaDiscord, FaHeart } from 'react-icons/fa';
 import { AwesomeButton } from 'react-awesome-button';
-import styles from 'react-awesome-button/src/styles/themes/theme-c137';
 import { ModalHeroSection } from '../FakeDatabase/Fakedatabase';
 import ModalElement from './Modal';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -30,7 +29,7 @@ const ActionSection = () => {
         handleClose={handleClose}
         item={ModalHeroSection[numberSection]}
       />
-      <div className="row align-items-center justify-content-center text-center">
+      <div className="row justify-content-center p-0">
         <div className="col-auto py-1">
           <AwesomeButton
             onPress={() => handleClick(0)}

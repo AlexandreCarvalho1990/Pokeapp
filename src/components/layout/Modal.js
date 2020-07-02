@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Modal } from 'react-bootstrap';
+import { Modal, Container } from 'react-bootstrap';
 import { AwesomeButton } from 'react-awesome-button';
 import DownloadButton from './DownloadButton';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -86,22 +86,23 @@ const ModalElement = ({ show, handleClose, item }) => {
         <Modal.Body>
           {item.type === 'download' ? (
             <Fragment>
-              <h1>{item.title}</h1>
+              <h1 className="p-2">{item.title}</h1>
               <hr />
               <div className="text-justify">
-                <p>{item.text}</p>
-                <p>{item.secondtext}</p>
+                <p className="p-2">{item.text}</p>
+                <p className="p-2">{item.secondtext}</p>
               </div>
-              <hr />
-              <AnchorLink
-                href="#memberSection"
-                className="text-decoration-none"
-              >
-                <AwesomeButton onPress={handleClose} type="link" size="large">
-                  <FaHeart /> Support Us
-                </AwesomeButton>{' '}
-              </AnchorLink>
-              <DownloadButton />{' '}
+              <Container>
+                <AnchorLink
+                  href="#memberSection"
+                  className="text-decoration-none"
+                >
+                  <AwesomeButton onPress={handleClose} type="link" size="large">
+                    <FaHeart /> Support Us
+                  </AwesomeButton>{' '}
+                </AnchorLink>
+                <DownloadButton />{' '}
+              </Container>
             </Fragment>
           ) : null}
         </Modal.Body>

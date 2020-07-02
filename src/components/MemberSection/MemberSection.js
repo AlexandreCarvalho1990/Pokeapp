@@ -36,7 +36,7 @@ const MemberSection = () => {
 .member-month {
     color: rgb(112, 108, 100);
     font-family: aktiv-grotesk, sans-serif;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em !important;
     position: relative;
     text-transform: uppercase;
     text-align: center;
@@ -50,15 +50,11 @@ const MemberSection = () => {
       </style>
       <Container id="memberSection" fluid className="memberSection">
         <h1 className="member-title text-center p-2">Become a Member</h1>
-        <Row className="justify-content-center text-center">
+        <Row className="justify-content-center text-center p-2">
           {MemberCard.map((info, index) => (
-            <Card
-              key={index}
-              style={{ width: '25rem' }}
-              className=" m-4 shadow"
-            >
-              <Card.Body className="justify-content-center justify-content-center">
-                <h2 className="text-center">
+            <Card key={index} style={{ width: '25rem' }} className="m-4 shadow">
+              <Card.Body>
+                <h2 className="text-center m-0 p-3">
                   <img
                     src={info.icon}
                     width="30"
@@ -71,23 +67,24 @@ const MemberSection = () => {
                 <hr />
                 <h1 className="member-price text-center">{info.price}$</h1>
                 <p className="member-month">PER MONTH</p>
-                <div>
-                  {info.benefits.items.map((itemText, index) => (
-                    <Fragment key={index}>
-                      <hr />
-                      <p className="lead">{itemText}</p>
-                    </Fragment>
-                  ))}
-                </div>{' '}
-                <AwesomeButton
-                  type={info.price > 2 ? 'link' : 'primary'}
-                  size="medium"
-                  ripple
-                  href={info.link}
-                  className="text-decoration-none"
-                >
-                  Join
-                </AwesomeButton>
+
+                {info.benefits.items.map((itemText, index) => (
+                  <Fragment key={index}>
+                    <hr />
+                    <p className="lead">{itemText}</p>
+                  </Fragment>
+                ))}
+                <div className="p-3">
+                  <AwesomeButton
+                    type={info.price > 2 ? 'link' : 'primary'}
+                    size="medium"
+                    ripple
+                    href={info.link}
+                    className="text-decoration-none"
+                  >
+                    Join
+                  </AwesomeButton>
+                </div>
               </Card.Body>
             </Card>
           ))}

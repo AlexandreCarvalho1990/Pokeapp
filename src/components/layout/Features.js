@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import googleLogo from '../../img/googleplay.svg';
-import { Container } from 'react-bootstrap';
 const Features = () => {
   return (
     <Fragment>

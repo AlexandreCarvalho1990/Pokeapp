@@ -37,7 +37,6 @@ import './PhoneScreen.css';
           </Slide>
 */
 const PhoneScreen = () => {
-  console.log(CarouselProvider);
   const videoList = [
     FastcatchPerfectthrow,
     FeatList,

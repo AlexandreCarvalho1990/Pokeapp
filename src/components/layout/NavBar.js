@@ -56,7 +56,7 @@ const NavBar = () => {
           <Nav className="mr-auto"></Nav>
           <Nav className="text">
             <AnchorLink href="#memberSection">
-              <Nav.Link className="text-dark font-weight-bold">Join</Nav.Link>
+              <p className="nav-link text-dark font-weight-bold">Join</p>
             </AnchorLink>
             <Nav.Link
               href="https://discord.com/invite/hW4djSw"

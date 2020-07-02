@@ -44,7 +44,7 @@ const HeroSection = () => {
         }
         `}
       </style>
-      <div className="shadow-md container-hero d-flex justify-content-center px-4">
+      <div className="shadow-md container container-hero px-4">
         <div className="row align-items-center justify-content-center py-4 px-2">
           <div className="col-lg-6 p-4">
             <h1 className="features-text display-4">
@@ -56,7 +56,7 @@ const HeroSection = () => {
               Improve your experience when playing Pokémon Go. Enjoy an unique,
               richer and more enjoyable game with Pokemod.
             </h2>
-            <ActionSection className="container" />
+            <ActionSection />
           </div>
           <div className="d-flex align-items-center justify-content-center col-auto py-4">
             {' '}

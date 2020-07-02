@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FaHeart } from 'react-icons/fa';
-import { Card, Jumbotron, Container } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import Features from '../layout/Features';
 
 const Footer = () => {
@@ -9,7 +9,8 @@ const Footer = () => {
       <style type="text/css">
         {`
     .footer-pokemod {
-      border-radius: 0px;
+
+      border-radius: 0!important;
         background-color: black;
     }
     `}
@@ -28,7 +29,7 @@ const Footer = () => {
                 by
                 <em> The Pokemod Group</em>.
               </p>
-              <p className="small text-secondary p-1">
+              <p className="small text-secondary m-0">
                 Pokémon, Pokémon character names &amp; images and Pokémon Go are
                 trademarks of Nintendo® and The Pokémon Company®.
               </p>
