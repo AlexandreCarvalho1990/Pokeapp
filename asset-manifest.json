@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/AlexandreCarvalho1990/Pokeapp/static/css/main.62160c98.chunk.css",
-    "main.js": "/AlexandreCarvalho1990/Pokeapp/static/js/main.75d0bc1e.chunk.js",
-    "main.js.map": "/AlexandreCarvalho1990/Pokeapp/static/js/main.75d0bc1e.chunk.js.map",
+    "main.js": "/AlexandreCarvalho1990/Pokeapp/static/js/main.6e6b7e50.chunk.js",
+    "main.js.map": "/AlexandreCarvalho1990/Pokeapp/static/js/main.6e6b7e50.chunk.js.map",
     "runtime-main.js": "/AlexandreCarvalho1990/Pokeapp/static/js/runtime-main.a85f11b0.js",
     "runtime-main.js.map": "/AlexandreCarvalho1990/Pokeapp/static/js/runtime-main.a85f11b0.js.map",
     "static/css/2.11a5732d.chunk.css": "/AlexandreCarvalho1990/Pokeapp/static/css/2.11a5732d.chunk.css",
-    "static/js/2.cc97394a.chunk.js": "/AlexandreCarvalho1990/Pokeapp/static/js/2.cc97394a.chunk.js",
-    "static/js/2.cc97394a.chunk.js.map": "/AlexandreCarvalho1990/Pokeapp/static/js/2.cc97394a.chunk.js.map",
+    "static/js/2.ded38431.chunk.js": "/AlexandreCarvalho1990/Pokeapp/static/js/2.ded38431.chunk.js",
+    "static/js/2.ded38431.chunk.js.map": "/AlexandreCarvalho1990/Pokeapp/static/js/2.ded38431.chunk.js.map",
     "index.html": "/AlexandreCarvalho1990/Pokeapp/index.html",
-    "precache-manifest.9e69b17144843f2589a6ee10c91adfd7.js": "/AlexandreCarvalho1990/Pokeapp/precache-manifest.9e69b17144843f2589a6ee10c91adfd7.js",
+    "precache-manifest.833743000389fcb55c39f41e9ee9457c.js": "/AlexandreCarvalho1990/Pokeapp/precache-manifest.833743000389fcb55c39f41e9ee9457c.js",
     "service-worker.js": "/AlexandreCarvalho1990/Pokeapp/service-worker.js",
     "static/css/2.11a5732d.chunk.css.map": "/AlexandreCarvalho1990/Pokeapp/static/css/2.11a5732d.chunk.css.map",
     "static/css/main.62160c98.chunk.css.map": "/AlexandreCarvalho1990/Pokeapp/static/css/main.62160c98.chunk.css.map",
-    "static/js/2.cc97394a.chunk.js.LICENSE.txt": "/AlexandreCarvalho1990/Pokeapp/static/js/2.cc97394a.chunk.js.LICENSE.txt",
+    "static/js/2.ded38431.chunk.js.LICENSE.txt": "/AlexandreCarvalho1990/Pokeapp/static/js/2.ded38431.chunk.js.LICENSE.txt",
     "static/media/NotFound.png": "/AlexandreCarvalho1990/Pokeapp/static/media/NotFound.338a29ce.png",
     "static/media/PokeApp.apk": "/AlexandreCarvalho1990/Pokeapp/static/media/PokeApp.9cd5403f.apk",
     "static/media/bitcoin_qrcode_big.png": "/AlexandreCarvalho1990/Pokeapp/static/media/bitcoin_qrcode_big.13fee277.png",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.a85f11b0.js",
     "static/css/2.11a5732d.chunk.css",
-    "static/js/2.cc97394a.chunk.js",
+    "static/js/2.ded38431.chunk.js",
     "static/css/main.62160c98.chunk.css",
-    "static/js/main.75d0bc1e.chunk.js"
+    "static/js/main.6e6b7e50.chunk.js"
   ]
 }
