@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73bf83182d5b767e41bffdbe90e81ded",
+    "revision": "fdc5aa7897d6027bf0e168c49961e1cd",
     "url": "/AlexandreCarvalho1990/Pokeapp/index.html"
   },
   {
-    "revision": "71b249d85b1a42696d0e",
-    "url": "/AlexandreCarvalho1990/Pokeapp/static/css/2.11a5732d.chunk.css"
+    "revision": "9813bf78baf5ca5ddd71",
+    "url": "/AlexandreCarvalho1990/Pokeapp/static/css/2.5684d2e2.chunk.css"
   },
   {
-    "revision": "886f8d1baf4f35f511c6",
-    "url": "/AlexandreCarvalho1990/Pokeapp/static/css/main.62160c98.chunk.css"
+    "revision": "668455976a0900e1a41f",
+    "url": "/AlexandreCarvalho1990/Pokeapp/static/css/main.746f2311.chunk.css"
   },
   {
-    "revision": "71b249d85b1a42696d0e",
-    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/2.682114c2.chunk.js"
+    "revision": "9813bf78baf5ca5ddd71",
+    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/2.94029021.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/2.682114c2.chunk.js.LICENSE.txt"
+    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/2.94029021.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "886f8d1baf4f35f511c6",
-    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/main.82c7634d.chunk.js"
+    "revision": "668455976a0900e1a41f",
+    "url": "/AlexandreCarvalho1990/Pokeapp/static/js/main.2fbf3bbd.chunk.js"
   },
   {
     "revision": "8e1732995cfdbf1bf92a",
