@@ -52,7 +52,6 @@ const ActionSection = () => {
             className="text-decoration-none"
             type="primary"
             size="medium"
-            className="text-decoration-none"
           >
             <FaDiscord /> Join Us
           </AwesomeButton>{' '}
