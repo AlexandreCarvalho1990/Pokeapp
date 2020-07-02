@@ -49,13 +49,7 @@ const NavBar = () => {
             className="d-inline-block"
             alt="Pokemod"
           />{' '}
-          <img
-            src={logo2}
-            width="100"
-            height="auto"
-            className="d-inline-block"
-            alt="Pokemod"
-          />{' '}
+          <strong>Pokemod</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
